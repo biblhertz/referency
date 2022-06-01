@@ -1,0 +1,40 @@
+meTypeset/
+workspace/
+__pycache__/
+venv/
+logs/
+flask_session/
+*.pyc
+
+.python-version
+
+############
+# OS files #
+############
+
+# macOS
+.DS_Store
+
+#####################
+# Application files #
+#####################
+
+# Eclipse
+.project
+.pydevproject
+.settings/
+
+# LibreOffice
+.~lock*
+
+# vim
+*~
+
+###########################
+# Project generated files #
+###########################
+
+ref-logs/
+*.config.ini
+*.log
+

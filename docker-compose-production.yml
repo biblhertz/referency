@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: app_prod
+    container_name: refhar_prod
+    environment:
+      - FLASK_ENV=production
+    ports:
+      - "80:5000"
+    volumes:
+      - .:/refhar
+    command: gunicorn -b 0.0.0.0:5000 "app:create_app()"

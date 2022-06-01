@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: app_dev
+    container_name: refhar_dev
+    environment:
+      - FLASK_ENV=development
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/refhar:rw
+    command:  flask run
