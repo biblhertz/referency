@@ -35,6 +35,6 @@ flask_session/
 ###########################
 
 ref-logs/
-*.config.ini
+#*.config.ini
 *.log
 
